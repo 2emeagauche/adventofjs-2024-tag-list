@@ -1,0 +1,59 @@
+html {
+  height: 100%;
+  background: black;
+  color: white;
+  font-size: 1rem;
+}
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+h1 {
+  font-weight: normal;
+  margin: 0 auto 0.5rem;
+  font-size: 1rem;
+  text-align: left;
+}
+#ui {
+  width: 600px;
+  margin: 4rem auto auto;
+  /*! margin-top: 4rem; */
+}
+#tagsContainer {
+  background: rgb(111, 111, 111);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+#userInput {
+  border-top: none;
+  background: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid white;
+  outline: none;
+  color: white;
+  font-size: 1rem;
+}
+.tagBlock {
+  border: 1px solid white;
+  border-radius: 1.5rem;
+  padding: 0.5rem 1rem;
+  display: flex;
+  gap: 0.5rem;
+  align-items: baseline;
+}
+.tagBlock button {
+  border: none;
+  background: none;
+  font-family: monospace;
+  font-size: 1rem;
+  color: lightgray;
+  cursor: pointer;
+}
+.tagBlock button:hover {
+  color: lightcoral;
+}
