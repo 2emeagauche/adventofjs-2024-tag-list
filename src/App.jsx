@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef, useCallback } from "react";
+import { useState, useEffect, useRef } from "react";
 import Tag from "./components/Tag";
 
 export default function App() {
@@ -13,9 +13,10 @@ export default function App() {
   };
 
   useEffect(() => {
-    documentRef.current.addEventListener("keydown", deleteLastTag);
+    const doc = documentRef.current;
+    doc.addEventListener("keydown", deleteLastTag);
     return () => {
-      documentRef.current.removeEventListener("keydown", deleteLastTag);
+      doc.removeEventListener("keydown", deleteLastTag);
     };
   }, [tagList]);
 
