@@ -61,8 +61,8 @@ export default function App() {
         </div>
         <ul style={{ textAlign: "left" }}>
           <li>type your tags separated by a coma to create them</li>
-          <li>press Del key to delete the last tag created</li>
-          <li>click the cross of a tag to delete it</li>
+          <li>{`press "Del" key to delete the last one`}</li>
+          <li>{`click a cross's tag to delete it`}</li>
         </ul>
       </div>
     </div>
